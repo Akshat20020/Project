@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.MenuController">
+   <children>
+      <Group>
+         <children>
+            <ImageView fx:id="Background" fitHeight="720.0" fitWidth="1084.0" onMouseClicked="#start" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Assets/sky_4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="loadButton" fitHeight="107.0" fitWidth="110.0" layoutX="16.0" layoutY="798.0" onMouseClicked="#load" onMouseEntered="#enterLoad" onMouseExited="#exitLoad" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/load_39552.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exitButton" fitHeight="109.0" fitWidth="103.0" layoutX="962.0" layoutY="803.0" onMouseClicked="#exit" onMouseEntered="#enterExit" onMouseExited="#exitExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playButton" fitHeight="183.0" fitWidth="406.0" layoutX="354.0" layoutY="758.0" onMouseClicked="#start" onMouseEntered="#enterPlay" onMouseExited="#exitPlay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/start.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

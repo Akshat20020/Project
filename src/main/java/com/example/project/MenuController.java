@@ -1,6 +1,7 @@
 package com.example.project;
 
 import javafx.animation.TranslateTransition;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -8,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -77,9 +79,19 @@ public class MenuController implements Initializable {
 
     @FXML
     void start(MouseEvent event) throws IOException{
-        root = FXMLLoader.load(mainGame.class.getResource("level.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("newLevel.fxml"));
+        root = loader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newLevelController controller = loader.getController();
         Scene scene = new Scene(root);
+        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if (event.getCode().isWhitespaceKey()){
+                    controller.Playermove();
+                }
+            }
+        });
         stage.setScene(scene);
         stage.show();
 

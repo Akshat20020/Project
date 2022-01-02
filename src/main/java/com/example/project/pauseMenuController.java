@@ -1,6 +1,7 @@
 package com.example.project;
 
 import javafx.animation.TranslateTransition;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -9,6 +10,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -44,11 +46,23 @@ public class pauseMenuController implements Initializable {
 
     @FXML
     void resume(MouseEvent event) throws IOException {
-        root = FXMLLoader.load(levelController.class.getResource("level.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("newLevel.fxml"));
+        root = loader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        newLevelController controller = loader.getController();
         Scene scene = new Scene(root);
+        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if (event.getCode().isWhitespaceKey()){
+                    controller.Playermove();
+                }
+            }
+        });
         stage.setScene(scene);
         stage.show();
+
+        System.out.println("starting");
     }
     private void translating(Group group, int x, int y){
         TranslateTransition translate = new TranslateTransition();

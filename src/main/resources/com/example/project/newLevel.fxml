@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.newLevelController">
+   <children>
+      <Group>
+         <children>
+            <ImageView fx:id="Background" fitHeight="722.0" fitWidth="1080.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Assets/sky_4.png" />
+               </image>
+            </ImageView>
+            <Rectangle fx:id="DeathLine" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="23.0" layoutY="550.0" opacity="0.28" stroke="BLACK" strokeType="INSIDE" width="1080.0" />
+            <ImageView fx:id="Platform1" fitHeight="173.0" fitWidth="400.0" layoutX="24.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform2" fitHeight="226.0" fitWidth="285.0" layoutX="512.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform3" fitHeight="143.0" fitWidth="392.0" layoutX="928.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform4" fitHeight="131.0" fitWidth="310.0" layoutX="1257.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform5" fitHeight="174.0" fitWidth="217.0" layoutX="1702.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands9.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform9" fitHeight="278.0" fitWidth="650.0" layoutX="3964.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform8" fitHeight="276.0" fitWidth="966.0" layoutX="3160.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform12" fitHeight="372.0" fitWidth="785.0" layoutX="5916.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform7" fitHeight="271.0" fitWidth="350.0" layoutX="2605.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform6" fitHeight="258.0" fitWidth="426.0" layoutX="2127.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform10" fitHeight="268.0" fitWidth="414.0" layoutX="4719.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands10.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform11" fitHeight="329.0" fitWidth="450.0" layoutX="5227.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/BalancingRocks5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform13" fitHeight="488.0" fitWidth="895.0" layoutX="6685.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Platform14" fitHeight="488.0" fitWidth="1006.0" layoutX="7561.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Islands2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Player" fitHeight="69.0" fitWidth="61.0" layoutX="62.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Helmet4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Boss" fitHeight="240.0" fitWidth="242.0" layoutX="6072.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/OrcBoss.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy1" fitHeight="162.0" fitWidth="155.0" layoutX="620.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy2" fitHeight="150.0" fitWidth="167.0" layoutX="1224.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy3" fitHeight="145.0" fitWidth="131.0" layoutX="1787.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy4" fitHeight="153.0" fitWidth="143.0" layoutX="2347.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy5" fitHeight="143.0" fitWidth="138.0" layoutX="3260.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy6" fitHeight="75.0" fitWidth="78.0" layoutX="4062.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy7" fitHeight="75.0" fitWidth="78.0" layoutX="4169.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy8" fitHeight="75.0" fitWidth="78.0" layoutX="4831.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Enemy9" fitHeight="75.0" fitWidth="78.0" layoutX="5563.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Orc2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Treasure3" fitHeight="70.0" fitWidth="99.0" layoutX="3619.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/ChestClosed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Treasure2" fitHeight="70.0" fitWidth="99.0" layoutX="1384.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/ChestClosed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Treasure1" fitHeight="70.0" fitWidth="99.0" layoutX="258.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/ChestClosed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tnt1" fitHeight="98.0" fitWidth="65.0" layoutX="1094.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/TNT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tnt2" fitHeight="98.0" fitWidth="65.0" layoutX="2240.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/TNT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tnt3" fitHeight="98.0" fitWidth="65.0" layoutX="2778.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/TNT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tnt4" fitHeight="98.0" fitWidth="65.0" layoutX="3412.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/TNT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tnt5" fitHeight="98.0" fitWidth="65.0" layoutX="4366.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/TNT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Tnt6" fitHeight="98.0" fitWidth="65.0" layoutX="5326.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/TNT.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="10.0" layoutY="18.0">
+         <children>
+            <ImageView fx:id="Pause" fitHeight="107.0" fitWidth="93.0" onMouseClicked="#changeMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Pause.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="Score" fill="#1c008e" layoutX="395.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE : 0">
+               <font>
+                  <Font name="Impact" size="74.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
